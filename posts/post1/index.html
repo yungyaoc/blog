@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>第一篇文 | Yungyao&#39;s Blog</title>
+<title>第一篇文 | Yungyao&#39;s Page</title>
 <meta name="keywords" content="">
 <meta name="description" content="終於把網誌架出來了 Github好難，Hugo好難 之後有空再把一些文移植過來 不用用ig或fb之類超差的載體寫東西ㄌ 明天二模好好加油&gt;&l">
 <meta name="author" content="">
@@ -128,7 +128,7 @@
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Yungyao's Blog",
+    "name": "Yungyao's Page",
     "logo": {
       "@type": "ImageObject",
       "url": "http://yungyaoc.github.io/favicon.ico"
@@ -153,7 +153,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://yungyaoc.github.io/" accesskey="h" title="Yungyao&#39;s Blog (Alt + H)">Yungyao&#39;s Blog</a>
+            <a href="http://yungyaoc.github.io/" accesskey="h" title="Yungyao&#39;s Page (Alt + H)">Yungyao&#39;s Page</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -208,6 +208,7 @@
 
 </div>
   </header> 
+
   <div class="post-content"><p>終於把網誌架出來了
 Github好難，Hugo好難</p>
 <p>之後有空再把一些文移植過來
@@ -221,6 +222,14 @@ Github好難，Hugo好難</p>
   </div>
 
   <footer class="post-footer">
+<nav class="paginav">
+  <a class="prev" href="http://yungyaoc.github.io/posts/toi22-camp1/">
+    <span class="title">« Prev Page</span>
+    <br>
+    <span>TOI 22 選訓營一階心🉐</span>
+  </a>
+</nav>
+
   </footer><div id="disqus_thread"></div>
 <script>
     
@@ -239,7 +248,7 @@ Github好難，Hugo好難</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="http://yungyaoc.github.io/">Yungyao&#39;s Blog</a></span>
+    <span>&copy; 2022 <a href="http://yungyaoc.github.io/">Yungyao&#39;s Page</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
@@ -305,6 +314,53 @@ Github好難，Hugo好難</p>
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

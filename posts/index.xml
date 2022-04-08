@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Yungyao&#39;s Blog</title>
+    <title>Posts on Yungyao&#39;s Page</title>
     <link>http://yungyaoc.github.io/posts/</link>
-    <description>Recent content in Posts on Yungyao&#39;s Blog</description>
+    <description>Recent content in Posts on Yungyao&#39;s Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 06 Apr 2022 13:36:30 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 23:10:03 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TOI 22 選訓營二模</title>
+      <link>http://yungyaoc.github.io/posts/toi22mock2/</link>
+      <pubDate>Fri, 08 Apr 2022 23:10:03 +0800</pubDate>
+      
+      <guid>http://yungyaoc.github.io/posts/toi22mock2/</guid>
+      <description>Results 180/400 Rank 11 pA pB pC pD 32 38 10 100 pA 7/25/29/39 題敘 給一棵樹，某些點已經被上了相異的顏色 每次可以取一個未被上色的點，並將其上一個相鄰點的顏色 求有幾組合法的方案模</description>
+    </item>
+    
     <item>
       <title>TOI 22 選訓營一模</title>
       <link>http://yungyaoc.github.io/posts/toi22mock1/</link>
