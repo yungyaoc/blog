@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Content Types on Yungyao&#39;s Page</title>
+    <title>ContentTypes on Yungyao&#39;s Page</title>
     <link>http://yungyaoc.github.io/contenttypes/</link>
-    <description>Recent content in Content Types on Yungyao&#39;s Page</description>
+    <description>Recent content in ContentTypes on Yungyao&#39;s Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
     <lastBuildDate>Sat, 09 Apr 2022 16:21:48 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/contenttypes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Content Types</title>
-      <link>http://yungyaoc.github.io/contenttypes/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>競程</title>
+      <link>http://yungyaoc.github.io/contenttypes/%E7%AB%B6%E7%A8%8B/</link>
+      <pubDate>Sat, 09 Apr 2022 16:21:48 +0800</pubDate>
       
-      <guid>http://yungyaoc.github.io/contenttypes/home/</guid>
-      <description>All Contents 競程</description>
+      <guid>http://yungyaoc.github.io/contenttypes/%E7%AB%B6%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>網站</title>
+      <link>http://yungyaoc.github.io/contenttypes/%E7%B6%B2%E7%AB%99/</link>
+      <pubDate>Fri, 01 Apr 2022 16:15:37 +0800</pubDate>
+      
+      <guid>http://yungyaoc.github.io/contenttypes/%E7%B6%B2%E7%AB%99/</guid>
+      <description></description>
     </item>
     
   </channel>

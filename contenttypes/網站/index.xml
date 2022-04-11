@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>網站 on Yungyao&#39;s Page</title>
+    <link>http://yungyaoc.github.io/contenttypes/%E7%B6%B2%E7%AB%99/</link>
+    <description>Recent content in 網站 on Yungyao&#39;s Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 01 Apr 2022 16:15:37 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/contenttypes/%E7%B6%B2%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇文</title>
+      <link>http://yungyaoc.github.io/posts/post1/</link>
+      <pubDate>Fri, 01 Apr 2022 16:15:37 +0800</pubDate>
+      
+      <guid>http://yungyaoc.github.io/posts/post1/</guid>
+      <description>終於把網誌架出來了 Github好難，Hugo好難 之後有空再把一些文移植過來 不用用ig或fb之類超差的載體寫東西ㄌ 明天二模好好加油&amp;gt;&amp;l</description>
+    </item>
+    
+  </channel>
+</rss>
