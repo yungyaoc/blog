@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Yungyao&#39;s Page</title>
-    <link>http://yungyaoc.github.io/</link>
-    <description>Recent content on Yungyao&#39;s Page</description>
+    <title>競程 on Yungyao&#39;s Page</title>
+    <link>http://yungyaoc.github.io/contenttypes/%E7%AB%B6%E7%A8%8B/</link>
+    <description>Recent content in 競程 on Yungyao&#39;s Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Sat, 09 Apr 2022 16:21:48 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 16:21:48 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/contenttypes/%E7%AB%B6%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2階行前預備</title>
       <link>http://yungyaoc.github.io/posts/before2j/</link>
@@ -41,25 +41,6 @@
       
       <guid>http://yungyaoc.github.io/posts/toi22-camp1/</guid>
       <description>去年全國賽意外地打得不錯 也就意外地不用考初選進了選訓營 還在選訓裡面架好了這個Blog 結果出了選訓才架成功QQ 總之來打點心🉐文 第一個禮拜已經沒</description>
-    </item>
-    
-    <item>
-      <title>第一篇文</title>
-      <link>http://yungyaoc.github.io/posts/post1/</link>
-      <pubDate>Fri, 01 Apr 2022 16:15:37 +0800</pubDate>
-      
-      <guid>http://yungyaoc.github.io/posts/post1/</guid>
-      <description>終於把網誌架出來了 Github好難，Hugo好難 之後有空再把一些文移植過來 不用用ig或fb之類超差的載體寫東西ㄌ 明天二模好好加油&amp;gt;&amp;l</description>
-    </item>
-    
-    
-    <item>
-      <title>Content Types</title>
-      <link>http://yungyaoc.github.io/contenttypes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://yungyaoc.github.io/contenttypes/</guid>
-      <description>Content Types</description>
     </item>
     
   </channel>
