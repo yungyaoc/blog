@@ -1,1 +1,1 @@
-Yungyao's Blog 
+[Yungyao's Page](https://yungyaoc.github.io/)
