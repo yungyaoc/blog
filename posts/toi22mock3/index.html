@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>TOI 22 選訓營三模 | Yungyao&#39;s Page</title>
+<meta name="keywords" content="TOI">
+<meta name="description" content="Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含">
+<meta name="author" content="">
+<link rel="canonical" href="http://yungyaoc.github.io/posts/toi22mock3/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css" integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js" integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://yungyaoc.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://yungyaoc.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://yungyaoc.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://yungyaoc.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://yungyaoc.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script><meta property="og:title" content="TOI 22 選訓營三模" />
+<meta property="og:description" content="Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://yungyaoc.github.io/posts/toi22mock3/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-16T15:55:19&#43;08:00" />
+<meta property="article:modified_time" content="2022-04-16T15:55:19&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TOI 22 選訓營三模"/>
+<meta name="twitter:description" content="Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://yungyaoc.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "TOI 22 選訓營三模",
+      "item": "http://yungyaoc.github.io/posts/toi22mock3/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "TOI 22 選訓營三模",
+  "name": "TOI 22 選訓營三模",
+  "description": "Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含",
+  "keywords": [
+    "TOI"
+  ],
+  "articleBody": "Results 186/400 Rank 9\n   pA pB pC pD     24 23 39 100    pA 3/16/21/19/41\n題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重\n另外有 $m$ 個點\n求有幾個點至少被包含在一個圓內、一個點最多被包含在幾個圓、每個點被包含在的圓的權重和的和\n想法 看完沒啥想法，除了暴力 $O(nm)$ 跟所有圓都是內離關係的Subtask都不會做\n最後就草草拿了兩個Subtask就關掉這題ㄌ\n結果好像不算難，沒去想滿可惜的\npB 23/12/37/28\n題敘 互動題\n有一張完全圖，每條邊分別會被上藍色或紅色\n你對這張完全圖有三個函式可以使用\n 可以查詢一個點在 $k$ 步($k \\leq 2$)，只經由紅色邊能走到的點集 給一個點集，將這個clique內的邊顏色反轉 重置盤面為初始畫面  目標為將整張圖轉為紅色\n如果操作 $K$ 次，則得分為\n$$\\begin{cases} 1, \u0026 \\text{if $K \\leq 10000$}.\\\\ \\frac{10000}{K}, \u0026 \\text{if $10000 想法 完全沒想法\n只喇了 $n \\le 10$ 的Subtask\n不過有人拿了90分，超強，到底怎麼唬爛ㄉ\npC 3/(3)13/(2)9/(3)15/10/9/(9)41\n題敘 怪怪互動題\n要寫兩個函式 string Alice(long long) 和 long long Bob(string)\njudge會先用 Alice 把一個整數轉成一個由B, W構成的字串\n接著這個字串會被劣化\n對於每個字元，如果前一個字元是沒有被劣化的 B，則有可能就會劣化成另一種字元\n接著judge會把劣化的字串丟給 Bob\nBob 接著要能判斷出原本的數是什麼\n給分是依據字串長度，設長度為 $l$\n若 $l \\leq k$，獲得完整分數\n$k $l  k+20$ 時0分\n$k = 89$ 有滿分\nSubtask 5, 6 $k$ 分別為 $189$ 和 $126$\n前面幾個Subtask則是劣化的字元相隔至少10和只有一個或兩個字元劣化\n想法 剛開始先把trivial的Subtask 5, 6寫掉\n後來發現可以把比較少出現的bit用成兩個字元，常出現的用一個\n就可以在 $\\frac32log(n)$ 個bit內解決\n還要再多加一個bit判斷 1 多還 0 多，所以會用到95個bit\n最後一刻想到怎麼壓掉那個bit結果來不及傳，就這樣少了10分，慘\npD 11/34/55\n題敘 在一個 $n \\times m$ 的方格圖上，有些點上原本有一株草\n同時有 $k$ 個向量，對於每株草，每秒鐘都分別會往每個向量的方向長一株草\n而一個點上如果有兩個以上的草則會兩兩抵銷\n求 $T$ 秒後會有幾株草\n$n, m \\leq 28,$ $k \\leq 10,$ $T \\leq 10^{15}$\n想法 可以把移動想像成邊，就會變成$\\mod 2$ 下的在一張圖上走 $T$ 步有幾種走法\n不過可以留在原地，讓我想前綴和想了很久\n後來才想到只要再對每個點建個自環就好了\n不過點數是 $n \\times m = 784$，正常$O(n^3)$矩陣乘法下去會燒雞\n但$\\mod 2$ 加法等價於 $XOR$ 運算，所以可以用bitset優化，砸下去就會過ㄌ\n還有電電的 Ji_Kuai 用怪怪鴨腸過ㄌ\n小結 覺得有滿多東西都是可想可做的沒拿到，很可惜\n主要應該就是pD想太久\n在水題花了一個半小時真的太久了\n總之三模完分數的分群已經很顯然了\n只求不要二階墊底就好ㄌ",
+  "wordCount" : "1054",
+  "inLanguage": "en",
+  "datePublished": "2022-04-16T15:55:19+08:00",
+  "dateModified": "2022-04-16T15:55:19+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://yungyaoc.github.io/posts/toi22mock3/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yungyao's Page",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://yungyaoc.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://yungyaoc.github.io/" accesskey="h" title="Yungyao&#39;s Page (Alt + H)">Yungyao&#39;s Page</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://yungyaoc.github.io/archives" title="Archives/All posts">
+                    <span>Archives/All posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://yungyaoc.github.io/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://yungyaoc.github.io/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://yungyaoc.github.io/contenttypes/home" title="Topics">
+                    <span>Topics</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      TOI 22 選訓營三模
+    </h1>
+    <div class="post-meta"><span title='2022-04-16 15:55:19 +0800 CST'>April 16, 2022</span>
+
+</div>
+    &nbsp
+    <h4>Topic: <a href="/contenttypes/%e7%ab%b6%e7%a8%8b">競程</a> </h3>
+    &nbsp
+    <ul class="post-tags">
+      <li><a href="http://yungyaoc.github.io/tags/toi/">TOI</a></li>
+    </ul>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#results" aria-label="Results">Results</a></li>
+                <li>
+                    <a href="#pa" aria-label="pA">pA</a><ul>
+                        
+                <li>
+                    <a href="#%e9%a1%8c%e6%95%98" aria-label="題敘">題敘</a></li>
+                <li>
+                    <a href="#%e6%83%b3%e6%b3%95" aria-label="想法">想法</a></li></ul>
+                </li>
+                <li>
+                    <a href="#pb" aria-label="pB">pB</a><ul>
+                        
+                <li>
+                    <a href="#%e9%a1%8c%e6%95%98-1" aria-label="題敘">題敘</a></li>
+                <li>
+                    <a href="#%e6%83%b3%e6%b3%95-1" aria-label="想法">想法</a></li></ul>
+                </li>
+                <li>
+                    <a href="#pc" aria-label="pC">pC</a><ul>
+                        
+                <li>
+                    <a href="#%e9%a1%8c%e6%95%98-2" aria-label="題敘">題敘</a></li>
+                <li>
+                    <a href="#%e6%83%b3%e6%b3%95-2" aria-label="想法">想法</a></li></ul>
+                </li>
+                <li>
+                    <a href="#pd" aria-label="pD">pD</a><ul>
+                        
+                <li>
+                    <a href="#%e9%a1%8c%e6%95%98-3" aria-label="題敘">題敘</a></li>
+                <li>
+                    <a href="#%e6%83%b3%e6%b3%95-3" aria-label="想法">想法</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%b0%8f%e7%b5%90" aria-label="小結">小結</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="results">Results<a hidden class="anchor" aria-hidden="true" href="#results">#</a></h2>
+<p>186/400 Rank 9</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">pA</th>
+<th style="text-align:center">pB</th>
+<th style="text-align:center">pC</th>
+<th style="text-align:center">pD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">100</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pa">pA<a hidden class="anchor" aria-hidden="true" href="#pa">#</a></h2>
+<p>3/<font color=gray>16</font>/21/<font color=gray>19</font>/<font color=gray>41</font></p>
+<h3 id="題敘">題敘<a hidden class="anchor" aria-hidden="true" href="#題敘">#</a></h3>
+<p>二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重</p>
+<p>另外有 $m$ 個點</p>
+<p>求有幾個點至少被包含在一個圓內、一個點最多被包含在幾個圓、每個點被包含在的圓的權重和的和</p>
+<h3 id="想法">想法<a hidden class="anchor" aria-hidden="true" href="#想法">#</a></h3>
+<p>看完沒啥想法，除了暴力 $O(nm)$ 跟所有圓都是內離關係的Subtask都不會做</p>
+<p>最後就草草拿了兩個Subtask就關掉這題ㄌ</p>
+<p>結果好像不算難，沒去想滿可惜的</p>
+<h2 id="pb">pB<a hidden class="anchor" aria-hidden="true" href="#pb">#</a></h2>
+<p>23/<font color=gray>12</font>/<font color=gray>37</font>/<font color=gray>28</font></p>
+<h3 id="題敘-1">題敘<a hidden class="anchor" aria-hidden="true" href="#題敘-1">#</a></h3>
+<p>互動題</p>
+<p>有一張完全圖，每條邊分別會被上藍色或紅色</p>
+<p>你對這張完全圖有三個函式可以使用</p>
+<ol>
+<li>可以查詢一個點在 $k$ 步($k \leq 2$)，只經由紅色邊能走到的點集</li>
+<li>給一個點集，將這個clique內的邊顏色反轉</li>
+<li>重置盤面為初始畫面</li>
+</ol>
+<p>目標為將整張圖轉為紅色</p>
+<p>如果操作 $K$ 次，則得分為</p>
+<p>$$\begin{cases}
+1, &amp; \text{if $K \leq 10000$}.\\
+\frac{10000}{K}, &amp; \text{if $10000 &lt; K \leq 1000000$}.
+\end{cases}$$</p>
+<h3 id="想法-1">想法<a hidden class="anchor" aria-hidden="true" href="#想法-1">#</a></h3>
+<p>完全沒想法</p>
+<p>只喇了 $n \le 10$ 的Subtask</p>
+<p>不過有人拿了90分，超強，到底怎麼唬爛ㄉ</p>
+<h2 id="pc">pC<a hidden class="anchor" aria-hidden="true" href="#pc">#</a></h2>
+<p>3/(3)<font color=gray>13</font>/(2)<font color=gray>9</font>/(3)<font color=gray>15</font>/10/9/(9)<font color=gray>41</font></p>
+<h3 id="題敘-2">題敘<a hidden class="anchor" aria-hidden="true" href="#題敘-2">#</a></h3>
+<p>怪怪互動題</p>
+<p>要寫兩個函式 <code>string Alice(long long)</code> 和 <code>long long Bob(string)</code></p>
+<p>judge會先用 <code>Alice</code> 把一個整數轉成一個由B, W構成的字串</p>
+<p>接著這個字串會被<code>劣化</code></p>
+<p>對於每個字元，如果前一個字元是沒有被劣化的 B，則有可能就會劣化成另一種字元</p>
+<p>接著judge會把劣化的字串丟給 <code>Bob</code></p>
+<p><code>Bob</code> 接著要能判斷出原本的數是什麼</p>
+<p>給分是依據字串長度，設長度為 $l$</p>
+<p>若 $l \leq k$，獲得完整分數</p>
+<p>$k &lt; l \leq k+20$ 時連續給分，其中$k &lt; l \leq k+5$ 的部分配分較高</p>
+<p>$l &gt; k+20$ 時0分</p>
+<p>$k = 89$ 有滿分</p>
+<p>Subtask 5, 6 $k$ 分別為 $189$ 和 $126$</p>
+<p>前面幾個Subtask則是劣化的字元相隔至少10和只有一個或兩個字元劣化</p>
+<h3 id="想法-2">想法<a hidden class="anchor" aria-hidden="true" href="#想法-2">#</a></h3>
+<p>剛開始先把trivial的Subtask 5, 6寫掉</p>
+<p>後來發現可以把比較少出現的bit用成兩個字元，常出現的用一個</p>
+<p>就可以在 $\frac32log(n)$ 個bit內解決</p>
+<p>還要再多加一個bit判斷 <code>1</code> 多還 <code>0</code> 多，所以會用到95個bit</p>
+<p>最後一刻想到怎麼壓掉那個bit結果來不及傳，就這樣少了10分，慘</p>
+<h2 id="pd">pD<a hidden class="anchor" aria-hidden="true" href="#pd">#</a></h2>
+<p>11/34/55</p>
+<h3 id="題敘-3">題敘<a hidden class="anchor" aria-hidden="true" href="#題敘-3">#</a></h3>
+<p>在一個 $n \times m$ 的方格圖上，有些點上原本有一株草</p>
+<p>同時有 $k$ 個向量，對於每株草，每秒鐘都分別會往每個向量的方向長一株草</p>
+<p>而一個點上如果有兩個以上的草則會兩兩抵銷</p>
+<p>求 $T$ 秒後會有幾株草</p>
+<p>$n, m \leq 28,$ $k \leq 10,$ $T \leq 10^{15}$</p>
+<h3 id="想法-3">想法<a hidden class="anchor" aria-hidden="true" href="#想法-3">#</a></h3>
+<p>可以把移動想像成邊，就會變成$\mod 2$ 下的在一張圖上走 $T$ 步有幾種走法</p>
+<p>不過可以留在原地，讓我想前綴和想了很久</p>
+<p>後來才想到只要再對每個點建個自環就好了</p>
+<p>不過點數是 $n \times m = 784$，正常$O(n^3)$矩陣乘法下去會燒雞</p>
+<p>但$\mod 2$ 加法等價於 $XOR$ 運算，所以可以用bitset優化，砸下去就會過ㄌ</p>
+<p>還有電電的 <code>Ji_Kuai</code> 用怪怪鴨腸過ㄌ</p>
+<h2 id="小結">小結<a hidden class="anchor" aria-hidden="true" href="#小結">#</a></h2>
+<p>覺得有滿多東西都是可想可做的沒拿到，很可惜</p>
+<p>主要應該就是pD想太久</p>
+<p>在水題花了一個半小時真的太久了</p>
+<p>總之三模完分數的分群已經很顯然了</p>
+<p>只求不要二階墊底就好ㄌ&gt;&lt;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://yungyaoc.github.io/tags/toi/">TOI</a></li>
+    </ul>
+<center><a href="/contenttypes/%e7%ab%b6%e7%a8%8b">競程</a></center>
+<nav class="paginav">
+  <a class="next" href="http://yungyaoc.github.io/posts/toi2jd3-4/">
+    <span class="title">Next Page »</span>
+    <br>
+    <span>TOI 22 選訓營二階 Day 3, 4</span>
+  </a>
+</nav>
+
+  </footer>
+<div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://yungyaos-blog.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="http://yungyaoc.github.io/">Yungyao&#39;s Page</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
