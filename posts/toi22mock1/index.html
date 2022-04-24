@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>TOI 22 選訓營一模 | Yungyao&#39;s Page</title>
-<meta name="keywords" content="TOI">
+<meta name="keywords" content="TOI, TOI模考">
 <meta name="description" content="偏怪的場，但以師大來說可能算不錯了(X 部分分切的不算粗，可能被JOISC養壞了XD 以下會有暴雷，雖然我猜沒啥人會想vir TOI模考 Results 263/400 Rank 8 pA">
 <meta name="author" content="">
 <link rel="canonical" href="http://yungyaoc.github.io/posts/toi22mock1/">
@@ -115,7 +115,7 @@
   "name": "TOI 22 選訓營一模",
   "description": "偏怪的場，但以師大來說可能算不錯了(X 部分分切的不算粗，可能被JOISC養壞了XD 以下會有暴雷，雖然我猜沒啥人會想vir TOI模考 Results 263/400 Rank 8 pA",
   "keywords": [
-    "TOI"
+    "TOI", "TOI模考"
   ],
   "articleBody": "偏怪的場，但以師大來說可能算不錯了(X\n部分分切的不算粗，可能被JOISC養壞了XD\n以下會有暴雷，雖然我猜沒啥人會想vir TOI模考\nResults 263/400 Rank 8\n   pA pB pC pD     52 100 11 100    pA 4/15/33/48\n題敘 給 $n$ 個相異正整數，求有幾組相異的 $A, B, C$ 滿足 $Ax + By = C$ 有整數解\n想法 怪怪排容數學題\n我不會數學，所以想了一陣子之後就決定拿52分放掉剩下的部分\n賽後看起來偏虧，畢竟是整場最多人過的題，不過有卡常的部分，所以說不定其實不虧就是ㄌ\n最起碼沒浪費太多時間在上面\npB 7/17/5/27/44\n題敘 有 $2n$ 個點排成一列，其中前 $n$ 個點被編號 $1 \\sim n$，後 $n$ 個點被編號 $-n \\sim -1$\n$m$ 條帶權邊都單向通往後面的點\n求從 $1$ 到 $-1$ 且 $\\forall i \\in [2, n]$，都恰經過點 $i$ 或點 $-i$ 一次的最短路徑，無解輸出 -1\n想法 假圖論真DP題\n我直接跳過了這題的 $O(n^2)$ 解，不過還是寫了一個帶 $O(n + m log(n))$ 的解，雖然這題可以做到線性\n算整場比較有思考成分的題(?\npC 11/26/63\n題敘 給 $n$ 個字串\n求有幾個字串pair能使兩個字串串接在一起會是回文字串\n想法 整場最不能怪人的題\n定位應該是偏水，甚至是幾個月前的APCS才剛出過\n而我當初賽中也有過這題\n雖然限制不太一樣，但Subtask 2應該要能穩穩地拿\n於是我就把之前寫Trie解再寫一次，結果一直吃WA\n也沒有花時間去想滿分解，超級虧\n事後回想滿分解應該是可做的，真的不知道賽中的自己在幹嘛\npD 11/52/37\n題敘 給二維平面上 $n$ 個點，求有幾組合法凸包\n想法 計算幾何+DP題\n看到這題之後就往Andrew’s Monotone Chain想\n接著想到斜率單調的性質就有一個 $O(n^3log(n))$ 的解了\n不過實作上因為不太想寫極角排序，就寫了浮點數運算\n題目保證三點不共線下應該會過，但還是怕怕的\n時間上 $n \\leq 700$ 感覺小危，不過 $log$ 在 lower_bound 上，$n^3$ 的常數又可以除以 $6$ (類似區間DP的狀況)\n感覺常數偏小(雖然有浮點數)\n再加上師大judge一秒1e9(X\n就丟上去ㄌ，結果一發，我自己也嚇到\n不過能AC的解就是好解la\n賽中心路\u0026小結 開場花快一個小時才把題目大致看完+簡單想過一輪\n其中花了10分鐘左右研究 ubuntu 上的 vim 如何使用，結果還是乖乖回去用 Codeblocks\n後來決定先把 A 的 52分寫掉\n接著想到 B 跟 D 怎麼做\n因為以前賽中碰計算幾何的經驗都不太好就決定先開 B\n沒想到吃 WA\n就跑去寫了 D，確定用浮點數運算不會出事之後就寫完丟上去，就意外地一發ㄌ\nAC一題之後再回去看 B，馬上就發現自己的 bug 超蠢，改掉立刻AC\n就這樣在10分鐘內 AC 了兩題，而且這個時候比賽才剛過一半\n接下來的時間都拿去砸 C\n卻一直過不了，也沒有去想滿分解\n最後只拿了暴力的11分\n結果論來說不寫 A 省下的時間也沒有好好利用\n不過出場後名次倒還不錯\n只是我的配分跟我附近的人差超多\n4~12 的配分\n想的到 D 但想不到 A 真的超怪\n不過至少是有拿到不錯的名次ㄌ\n",
   "wordCount" : "1078",
@@ -217,6 +217,7 @@
     &nbsp
     <ul class="post-tags">
       <li><a href="http://yungyaoc.github.io/tags/toi/">TOI</a></li>
+      <li><a href="http://yungyaoc.github.io/tags/toi%E6%A8%A1%E8%80%83/">TOI模考</a></li>
     </ul>
   </header> <div class="toc">
     <details >
@@ -366,6 +367,7 @@
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="http://yungyaoc.github.io/tags/toi/">TOI</a></li>
+      <li><a href="http://yungyaoc.github.io/tags/toi%E6%A8%A1%E8%80%83/">TOI模考</a></li>
     </ul>
 <center><a href="/contenttypes/%e7%ab%b6%e7%a8%8b">競程</a></center>
 <nav class="paginav">

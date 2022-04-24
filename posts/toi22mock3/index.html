@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>TOI 22 選訓營三模 | Yungyao&#39;s Page</title>
-<meta name="keywords" content="TOI">
+<meta name="keywords" content="TOI, TOI模考">
 <meta name="description" content="Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含">
 <meta name="author" content="">
 <link rel="canonical" href="http://yungyaoc.github.io/posts/toi22mock3/">
@@ -115,7 +115,7 @@
   "name": "TOI 22 選訓營三模",
   "description": "Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含",
   "keywords": [
-    "TOI"
+    "TOI", "TOI模考"
   ],
   "articleBody": "Results 186/400 Rank 9\n   pA pB pC pD     24 23 39 100    pA 3/16/21/19/41\n題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重\n另外有 $m$ 個點\n求有幾個點至少被包含在一個圓內、一個點最多被包含在幾個圓、每個點被包含在的圓的權重和的和\n想法 看完沒啥想法，除了暴力 $O(nm)$ 跟所有圓都是內離關係的Subtask都不會做\n最後就草草拿了兩個Subtask就關掉這題ㄌ\n結果好像不算難，沒去想滿可惜的\npB 23/12/37/28\n題敘 互動題\n有一張完全圖，每條邊分別會被上藍色或紅色\n你對這張完全圖有三個函式可以使用\n 可以查詢一個點在 $k$ 步($k \\leq 2$)，只經由紅色邊能走到的點集 給一個點集，將這個clique內的邊顏色反轉 重置盤面為初始畫面  目標為將整張圖轉為紅色\n如果操作 $K$ 次，則得分為\n$$\\begin{cases} 1, \u0026 \\text{if $K \\leq 10000$}.\\\\ \\frac{10000}{K}, \u0026 \\text{if $10000 想法 完全沒想法\n只喇了 $n \\le 10$ 的Subtask\n不過有人拿了90分，超強，到底怎麼唬爛ㄉ\npC 3/(3)13/(2)9/(3)15/10/9/(9)41\n題敘 怪怪互動題\n要寫兩個函式 string Alice(long long) 和 long long Bob(string)\njudge會先用 Alice 把一個整數轉成一個由B, W構成的字串\n接著這個字串會被劣化\n對於每個字元，如果前一個字元是沒有被劣化的 B，則有可能就會劣化成另一種字元\n接著judge會把劣化的字串丟給 Bob\nBob 接著要能判斷出原本的數是什麼\n給分是依據字串長度，設長度為 $l$\n若 $l \\leq k$，獲得完整分數\n$k $l  k+20$ 時0分\n$k = 89$ 有滿分\nSubtask 5, 6 $k$ 分別為 $189$ 和 $126$\n前面幾個Subtask則是劣化的字元相隔至少10和只有一個或兩個字元劣化\n想法 剛開始先把trivial的Subtask 5, 6寫掉\n後來發現可以把比較少出現的bit用成兩個字元，常出現的用一個\n就可以在 $\\frac32log(n)$ 個bit內解決\n還要再多加一個bit判斷 1 多還 0 多，所以會用到95個bit\n最後一刻想到怎麼壓掉那個bit結果來不及傳，就這樣少了10分，慘\npD 11/34/55\n題敘 在一個 $n \\times m$ 的方格圖上，有些點上原本有一株草\n同時有 $k$ 個向量，對於每株草，每秒鐘都分別會往每個向量的方向長一株草\n而一個點上如果有兩個以上的草則會兩兩抵銷\n求 $T$ 秒後會有幾株草\n$n, m \\leq 28,$ $k \\leq 10,$ $T \\leq 10^{15}$\n想法 可以把移動想像成邊，就會變成$\\mod 2$ 下的在一張圖上走 $T$ 步有幾種走法\n不過可以留在原地，讓我想前綴和想了很久\n後來才想到只要再對每個點建個自環就好了\n不過點數是 $n \\times m = 784$，正常$O(n^3)$矩陣乘法下去會燒雞\n但$\\mod 2$ 加法等價於 $XOR$ 運算，所以可以用bitset優化，砸下去就會過ㄌ\n還有電電的 Ji_Kuai 用怪怪鴨腸過ㄌ\n小結 覺得有滿多東西都是可想可做的沒拿到，很可惜\n主要應該就是pD想太久\n在水題花了一個半小時真的太久了\n總之三模完分數的分群已經很顯然了\n只求不要二階墊底就好ㄌ",
   "wordCount" : "1054",
@@ -217,6 +217,7 @@
     &nbsp
     <ul class="post-tags">
       <li><a href="http://yungyaoc.github.io/tags/toi/">TOI</a></li>
+      <li><a href="http://yungyaoc.github.io/tags/toi%E6%A8%A1%E8%80%83/">TOI模考</a></li>
     </ul>
   </header> <div class="toc">
     <details >
@@ -369,9 +370,15 @@
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="http://yungyaoc.github.io/tags/toi/">TOI</a></li>
+      <li><a href="http://yungyaoc.github.io/tags/toi%E6%A8%A1%E8%80%83/">TOI模考</a></li>
     </ul>
 <center><a href="/contenttypes/%e7%ab%b6%e7%a8%8b">競程</a></center>
 <nav class="paginav">
+  <a class="prev" href="http://yungyaoc.github.io/posts/toi2022/">
+    <span class="title">« Prev Page</span>
+    <br>
+    <span>TOI 2022 選訓營</span>
+  </a>
   <a class="next" href="http://yungyaoc.github.io/posts/toi2jd3-4/">
     <span class="title">Next Page »</span>
     <br>

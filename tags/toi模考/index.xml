@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TOI模考 on Yungyao&#39;s Page</title>
+    <link>http://yungyaoc.github.io/tags/toi%E6%A8%A1%E8%80%83/</link>
+    <description>Recent content in TOI模考 on Yungyao&#39;s Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sat, 16 Apr 2022 15:55:19 +0800</lastBuildDate><atom:link href="http://yungyaoc.github.io/tags/toi%E6%A8%A1%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TOI 22 選訓營三模</title>
+      <link>http://yungyaoc.github.io/posts/toi22mock3/</link>
+      <pubDate>Sat, 16 Apr 2022 15:55:19 +0800</pubDate>
+      
+      <guid>http://yungyaoc.github.io/posts/toi22mock3/</guid>
+      <description>Results 186/400 Rank 9 pA pB pC pD 24 23 39 100 pA 3/16/21/19/41 題敘 二維平面上有 $n$ 個相互都相離的圓，每個圓有一個權重 另外有 $m$ 個點 求有幾個點至少被包含在一個圓內、一個點最多被包含</description>
+    </item>
+    
+    <item>
+      <title>TOI 22 選訓營二模</title>
+      <link>http://yungyaoc.github.io/posts/toi22mock2/</link>
+      <pubDate>Fri, 08 Apr 2022 23:10:03 +0800</pubDate>
+      
+      <guid>http://yungyaoc.github.io/posts/toi22mock2/</guid>
+      <description>Results 180/400 Rank 11 pA pB pC pD 32 38 10 100 pA 7/25/29/39 題敘 給一棵樹，某些點已經被上了相異的顏色 每次可以取一個未被上色的點，並將其上一個相鄰點的顏色 求有幾組合法的方案模</description>
+    </item>
+    
+    <item>
+      <title>TOI 22 選訓營一模</title>
+      <link>http://yungyaoc.github.io/posts/toi22mock1/</link>
+      <pubDate>Wed, 06 Apr 2022 13:36:30 +0800</pubDate>
+      
+      <guid>http://yungyaoc.github.io/posts/toi22mock1/</guid>
+      <description>偏怪的場，但以師大來說可能算不錯了(X 部分分切的不算粗，可能被JOISC養壞了XD 以下會有暴雷，雖然我猜沒啥人會想vir TOI模考 Results 263/400 Rank 8 pA</description>
+    </item>
+    
+  </channel>
+</rss>
