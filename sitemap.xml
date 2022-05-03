@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yungyaoc.github.io/posts/</loc>
+    <lastmod>2022-05-03T10:58:51+08:00</lastmod>
+  </url><url>
+    <loc>https://yungyaoc.github.io/tags/</loc>
+    <lastmod>2022-05-03T10:58:51+08:00</lastmod>
+  </url><url>
+    <loc>https://yungyaoc.github.io/</loc>
+    <lastmod>2022-05-03T10:58:51+08:00</lastmod>
+  </url><url>
+    <loc>https://yungyaoc.github.io/posts/application/</loc>
+    <lastmod>2022-05-03T10:58:51+08:00</lastmod>
+  </url><url>
+    <loc>https://yungyaoc.github.io/tags/%E5%8D%87%E5%AD%B8/</loc>
+    <lastmod>2022-05-03T10:58:51+08:00</lastmod>
+  </url><url>
+    <loc>https://yungyaoc.github.io/tags/%E7%89%B9%E9%81%B8/</loc>
+    <lastmod>2022-05-03T10:58:51+08:00</lastmod>
+  </url><url>
     <loc>https://yungyaoc.github.io/categories/</loc>
     <lastmod>2022-04-26T15:05:18+08:00</lastmod>
   </url><url>
@@ -18,15 +36,6 @@
     <lastmod>2022-04-26T15:05:18+08:00</lastmod>
   </url><url>
     <loc>https://yungyaoc.github.io/tags/google-coding-competition/</loc>
-    <lastmod>2022-04-26T15:05:18+08:00</lastmod>
-  </url><url>
-    <loc>https://yungyaoc.github.io/posts/</loc>
-    <lastmod>2022-04-26T15:05:18+08:00</lastmod>
-  </url><url>
-    <loc>https://yungyaoc.github.io/tags/</loc>
-    <lastmod>2022-04-26T15:05:18+08:00</lastmod>
-  </url><url>
-    <loc>https://yungyaoc.github.io/</loc>
     <lastmod>2022-04-26T15:05:18+08:00</lastmod>
   </url><url>
     <loc>https://yungyaoc.github.io/categories/%E6%AF%94%E8%B3%BD/</loc>
