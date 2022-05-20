@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>題解 on Yungyao&#39;s Page</title>
+    <link>https://yungyaoc.github.io/tags/%E9%A1%8C%E8%A7%A3/</link>
+    <description>Recent content in 題解 on Yungyao&#39;s Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Thu, 19 May 2022 22:42:10 +0800</lastBuildDate><atom:link href="https://yungyaoc.github.io/tags/%E9%A1%8C%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建北電資 110 下學期模競 pD 題解</title>
+      <link>https://yungyaoc.github.io/posts/sol_for_ckefgisc1/</link>
+      <pubDate>Thu, 19 May 2022 22:42:10 +0800</pubDate>
+      
+      <guid>https://yungyaoc.github.io/posts/sol_for_ckefgisc1/</guid>
+      <description>我這次只複雜出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 給你一棵有根</description>
+    </item>
+    
+  </channel>
+</rss>
