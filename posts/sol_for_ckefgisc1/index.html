@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>建北電資 110 下學期模競 pD 題解 | Yungyao&#39;s Page</title>
 <meta name="keywords" content="題解">
-<meta name="description" content="我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 給你一棵有根">
+<meta name="description" content="我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 TL/ML: 1s/256mb 給你一棵">
 <meta name="author" content="">
 <link rel="canonical" href="https://yungyaoc.github.io/posts/sol_for_ckefgisc1/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css" integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as="style">
@@ -76,7 +76,7 @@
         });
     });
 </script><meta property="og:title" content="建北電資 110 下學期模競 pD 題解" />
-<meta property="og:description" content="我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 給你一棵有根" />
+<meta property="og:description" content="我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 TL/ML: 1s/256mb 給你一棵" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yungyaoc.github.io/posts/sol_for_ckefgisc1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-05-19T22:42:10&#43;08:00" />
@@ -84,7 +84,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="建北電資 110 下學期模競 pD 題解"/>
-<meta name="twitter:description" content="我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 給你一棵有根"/>
+<meta name="twitter:description" content="我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 TL/ML: 1s/256mb 給你一棵"/>
 
 
 <script type="application/ld+json">
@@ -113,12 +113,12 @@
   "@type": "BlogPosting",
   "headline": "建北電資 110 下學期模競 pD 題解",
   "name": "建北電資 110 下學期模競 pD 題解",
-  "description": "我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 給你一棵有根",
+  "description": "我這次只負責出一題水題，因為我太弱ㄌ 這題賽中只有一個人AC，連部分分都只有一個人拿 我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ 題敘 TL/ML: 1s/256mb 給你一棵",
   "keywords": [
     "題解"
   ],
-  "articleBody": "我這次只負責出一題水題，因為我太弱ㄌ\n這題賽中只有一個人AC，連部分分都只有一個人拿\n我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ\n題敘  給你一棵有根樹，每個節點有一個給定的布林值\n你每次操作可以把以某個節點為根的子樹取反\n求至少需要幾次操作使的所有值均為 $0$\n 輸入限制 $ n \\leq 5 \\times 10^5$\nSubtasks  $n \\leq 20$ (20%) 樹是一顆星 (31%) 無額外限制 (49%)  題解 Subtask 1 就暴力，沒啥好說ㄉ\nbool b[maxn], tr[maxn]; vector  adj[maxn]; void dfs(int x){ for (auto i:adj[x]){ tr[i] ^= tr[x]; dfs(i); } } void solve(){ int n; cin  n; REP0(i, n){ char c; cin  c; b[i] = (c == 'B'); } for (int i=1;i p; adj[p-1].pb(i); } int ans = n+1; REP0(mask, 1 i) \u0026 1); dfs(0); bool ok = true; REP0(i, n) if (b[i] ^ tr[i]){ ok = false; break; } if (ok) ans = min(ans, __builtin_popcount(mask)); } cout  $O(n2^n)$ AC\nSubtask 2 給的樹是一顆星\n只需要考慮根解點有被選擇跟沒被選擇就好了\n這31分真的很好拿，沒拿很可惜QQ\nSubtask 3(滿分) 滿分解的部分有三種作法\n Bottom-Up DP Top-Down DP 觀察  其實都是 $O(n)$ 所以只有常數差距而已\n以下一個一個講\nBottom-Up DP 我們可以定義出一個 DP 式 $$dp[i][0/1]$$ 分別表示使以 $i$ 為根的子樹全部都是 $0/1$ 所需的最少操作\n而轉移式也可以列出來為\n$$\\displaystyle dp[i][0] = \\begin{cases} \\sum_{j \\in son_i} dp[j][0], \u0026 \\text{if } color_i \\text{ is 0.} \\\\ 1 + \\sum_{j \\in son_i} dp[j][1], \u0026 \\text{otherwise} \\end{cases}$$ $$\\displaystyle dp[i][1] = \\begin{cases}1 + \\sum_{j \\in son_i} dp[j][0], \u0026 \\text{if } color_i \\text{ is 0.} \\\\ \\sum_{j \\in son_i} dp[j][1], \u0026 \\text{otherwise} \\end{cases}$$\n最後 $dp[1][0]$ 就會是答案了\nTop-Down DP 我們可以發現，根節點的狀態只能被他自己改變\n因此我們可以採用另一個更接近greedy的策略\n從根節點開始 dfs，只要遇到黑色就選取以該節點為根的子樹\n可以證明這樣 greedy 的結果跟前面 DP 是一樣的\nThe proof is left as an exercise for the reader.(X\n觀察 這上面的寫法都還需要跑一次 dfs，太慢ㄌ\n我們再觀察 Top-Down 的過程，你會發現其實除了根節點，只要一個節點跟他的父節點顏色不同就會被選取到\n而根節點只要是黑色就會被選\n因此我們其實只需要判斷這件事就足夠了\n程式碼可以短成這樣\nbool b[maxn]; void solve(){ int n; cin  n; REP1(i, n){ char c; cin  c; b[i] = (c == 'B'); } int ans = b[1]; for (int i=2;i p; ans += (b[i] ^ b[p]); } cout  於是你就獲得ACㄌ\n就說是水題QQ\n",
-  "wordCount" : "722",
+  "articleBody": "我這次只負責出一題水題，因為我太弱ㄌ\n這題賽中只有一個人AC，連部分分都只有一個人拿\n我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ\n題敘 TL/ML: 1s/256mb\n 給你一棵有根樹，每個節點有一個給定的布林值\n你每次操作可以把以某個節點為根的子樹取反\n求至少需要幾次操作使的所有值均為 $0$\n 輸入限制 $ n \\leq 5 \\times 10^5$\nSubtasks  $n \\leq 20$ (20%) 樹是一顆星 (31%) 無額外限制 (49%)  題解 Subtask 1 就暴力，沒啥好說ㄉ\nbool b[maxn], tr[maxn]; vector  adj[maxn]; void dfs(int x){ for (auto i:adj[x]){ tr[i] ^= tr[x]; dfs(i); } } void solve(){ int n; cin  n; REP0(i, n){ char c; cin  c; b[i] = (c == 'B'); } for (int i=1;i p; adj[p-1].pb(i); } int ans = n+1; REP0(mask, 1 i) \u0026 1); dfs(0); bool ok = true; REP0(i, n) if (b[i] ^ tr[i]){ ok = false; break; } if (ok) ans = min(ans, __builtin_popcount(mask)); } cout  $O(n2^n)$ AC\nSubtask 2 給的樹是一顆星\n只需要考慮根解點有被選擇跟沒被選擇就好了\n這31分真的很好拿，沒拿很可惜QQ\nSubtask 3(滿分) 滿分解的部分有三種作法\n Bottom-Up DP Top-Down DP 觀察  其實都是 $O(n)$ 所以只有常數差距而已\n以下一個一個講\nBottom-Up DP 我們可以定義出一個 DP 式 $$dp[i][0/1]$$ 分別表示使以 $i$ 為根的子樹全部都是 $0/1$ 所需的最少操作\n而轉移式也可以列出來為\n$$\\displaystyle dp[i][0] = \\begin{cases} \\sum_{j \\in son_i} dp[j][0], \u0026 \\text{if } color_i \\text{ is 0.} \\\\ 1 + \\sum_{j \\in son_i} dp[j][1], \u0026 \\text{otherwise} \\end{cases}$$ $$\\displaystyle dp[i][1] = \\begin{cases}1 + \\sum_{j \\in son_i} dp[j][0], \u0026 \\text{if } color_i \\text{ is 0.} \\\\ \\sum_{j \\in son_i} dp[j][1], \u0026 \\text{otherwise} \\end{cases}$$\n最後 $dp[1][0]$ 就會是答案了\nTop-Down DP 我們可以發現，根節點的狀態只能被他自己改變\n因此我們可以採用另一個更接近greedy的策略\n從根節點開始 dfs，只要遇到黑色就選取以該節點為根的子樹\n可以證明這樣 greedy 的結果跟前面 DP 是一樣的\nThe proof is left as an exercise for the reader.(X\n觀察 這上面的寫法都還需要跑一次 dfs，太慢ㄌ\n我們再觀察 Top-Down 的過程，你會發現其實除了根節點，只要一個節點跟他的父節點顏色不同就會被選取到\n而根節點只要是黑色就會被選\n因此我們其實只需要判斷這件事就足夠了\n程式碼可以短成這樣\nbool b[maxn]; void solve(){ int n; cin  n; REP1(i, n){ char c; cin  c; b[i] = (c == 'B'); } int ans = b[1]; for (int i=2;i p; ans += (b[i] ^ b[p]); } cout  於是你就獲得ACㄌ\n就說是水題QQ\n",
+  "wordCount" : "724",
   "inLanguage": "en",
   "datePublished": "2022-05-19T22:42:10+08:00",
   "dateModified": "2022-05-19T22:42:10+08:00",
@@ -232,10 +232,10 @@
                     <a href="#subtasks" aria-label="Subtasks">Subtasks</a></li></ul>
                 </li>
                 <li>
-                    <a href="#%e9%a1%8c%e8%a7%a3" aria-label="題解">題解</a><ul>
-                        
+                    <a href="#%e9%a1%8c%e8%a7%a3" aria-label="題解">題解</a></li>
                 <li>
-                    <a href="#subtask-1" aria-label="Subtask 1">Subtask 1</a></li>
+                    <a href="#subtask-1" aria-label="Subtask 1">Subtask 1</a><ul>
+                        
                 <li>
                     <a href="#subtask-2" aria-label="Subtask 2">Subtask 2</a></li>
                 <li>
@@ -260,21 +260,22 @@
   <div class="post-content"><p>我這次只負責出一題水題，因為我太弱ㄌ</p>
 <p>這題賽中只有一個人AC，連部分分都只有一個人拿</p>
 <p>我猜是放在 pD 的關係，就跟你們說沒按難度排ㄌ</p>
-<h1 id="題敘">題敘<a hidden class="anchor" aria-hidden="true" href="#題敘">#</a></h1>
+<h2 id="題敘">題敘<a hidden class="anchor" aria-hidden="true" href="#題敘">#</a></h2>
+<p>TL/ML: 1s/256mb</p>
 <blockquote>
 <p>給你一棵有根樹，每個節點有一個給定的布林值<br>
 你每次操作可以把以某個節點為根的子樹取反<br>
 求至少需要幾次操作使的所有值均為 $0$</p>
 </blockquote>
-<h2 id="輸入限制">輸入限制<a hidden class="anchor" aria-hidden="true" href="#輸入限制">#</a></h2>
+<h3 id="輸入限制">輸入限制<a hidden class="anchor" aria-hidden="true" href="#輸入限制">#</a></h3>
 <p>$ n \leq 5 \times 10^5$</p>
-<h2 id="subtasks">Subtasks<a hidden class="anchor" aria-hidden="true" href="#subtasks">#</a></h2>
+<h3 id="subtasks">Subtasks<a hidden class="anchor" aria-hidden="true" href="#subtasks">#</a></h3>
 <ol>
 <li>$n \leq 20$ (20%)</li>
 <li>樹是一顆星 (31%)</li>
 <li>無額外限制 (49%)</li>
 </ol>
-<h1 id="題解">題解<a hidden class="anchor" aria-hidden="true" href="#題解">#</a></h1>
+<h2 id="題解">題解<a hidden class="anchor" aria-hidden="true" href="#題解">#</a></h2>
 <h2 id="subtask-1">Subtask 1<a hidden class="anchor" aria-hidden="true" href="#subtask-1">#</a></h2>
 <p>就暴力，沒啥好說ㄉ</p>
 <pre><code>bool b[maxn], tr[maxn];
@@ -317,11 +318,11 @@ void solve(){
 }
 </code></pre>
 <p>$O(n2^n)$ AC</p>
-<h2 id="subtask-2">Subtask 2<a hidden class="anchor" aria-hidden="true" href="#subtask-2">#</a></h2>
+<h3 id="subtask-2">Subtask 2<a hidden class="anchor" aria-hidden="true" href="#subtask-2">#</a></h3>
 <p>給的樹是一顆星</p>
 <p>只需要考慮根解點有被選擇跟沒被選擇就好了</p>
 <p>這31分真的很好拿，沒拿很可惜QQ</p>
-<h2 id="subtask-3滿分">Subtask 3(滿分)<a hidden class="anchor" aria-hidden="true" href="#subtask-3滿分">#</a></h2>
+<h3 id="subtask-3滿分">Subtask 3(滿分)<a hidden class="anchor" aria-hidden="true" href="#subtask-3滿分">#</a></h3>
 <p>滿分解的部分有三種作法</p>
 <ol>
 <li>Bottom-Up DP</li>
@@ -330,7 +331,7 @@ void solve(){
 </ol>
 <p>其實都是 $O(n)$ 所以只有常數差距而已</p>
 <p>以下一個一個講</p>
-<h3 id="bottom-up-dp">Bottom-Up DP<a hidden class="anchor" aria-hidden="true" href="#bottom-up-dp">#</a></h3>
+<h4 id="bottom-up-dp">Bottom-Up DP<a hidden class="anchor" aria-hidden="true" href="#bottom-up-dp">#</a></h4>
 <p>我們可以定義出一個 DP 式
 $$dp[i][0/1]$$
 分別表示使以 $i$ 為根的子樹全部都是 $0/1$ 所需的最少操作</p>
@@ -338,13 +339,13 @@ $$dp[i][0/1]$$
 <p>$$\displaystyle dp[i][0] = \begin{cases} \sum_{j \in son_i} dp[j][0], &amp; \text{if } color_i \text{ is 0.} \\ 1 + \sum_{j \in son_i} dp[j][1], &amp; \text{otherwise} \end{cases}$$
 $$\displaystyle dp[i][1] = \begin{cases}1 + \sum_{j \in son_i} dp[j][0], &amp; \text{if } color_i \text{ is 0.} \\ \sum_{j \in son_i} dp[j][1], &amp; \text{otherwise} \end{cases}$$</p>
 <p>最後 $dp[1][0]$ 就會是答案了</p>
-<h3 id="top-down-dp">Top-Down DP<a hidden class="anchor" aria-hidden="true" href="#top-down-dp">#</a></h3>
+<h4 id="top-down-dp">Top-Down DP<a hidden class="anchor" aria-hidden="true" href="#top-down-dp">#</a></h4>
 <p>我們可以發現，根節點的狀態只能被他自己改變</p>
 <p>因此我們可以採用另一個更接近greedy的策略</p>
 <p>從根節點開始 <code>dfs</code>，只要遇到黑色就選取以該節點為根的子樹</p>
 <p>可以證明這樣 <code>greedy</code> 的結果跟前面 <code>DP</code> 是一樣的</p>
 <p>The proof is left as an exercise for the reader.(X</p>
-<h3 id="觀察">觀察<a hidden class="anchor" aria-hidden="true" href="#觀察">#</a></h3>
+<h4 id="觀察">觀察<a hidden class="anchor" aria-hidden="true" href="#觀察">#</a></h4>
 <p>這上面的寫法都還需要跑一次 <code>dfs</code>，太慢ㄌ</p>
 <p>我們再觀察 Top-Down 的過程，你會發現其實<strong>除了根節點，只要一個節點跟他的父節點顏色不同就會被選取到</strong></p>
 <p>而根節點<strong>只要是黑色就會被選</strong></p>
