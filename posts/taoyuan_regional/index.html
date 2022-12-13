@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ICPC 桃園站心得 | Yungyao&#39;s Page</title>
+<meta name="keywords" content="">
+<meta name="description" content="其實桃園站已經過了好一陣子了，不過桃園站完那陣子實在是有點忙，於是就拖到現在了 我的隊友是 joylintp 和 Ji_Kuai，隊名是超級油的 \(&lsquo;U`*)9 (這隊名甚至沒辦">
+<meta name="author" content="">
+<link rel="canonical" href="https://yungyaoc.github.io/posts/taoyuan_regional/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css" integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js" integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://yungyaoc.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yungyaoc.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yungyaoc.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://yungyaoc.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://yungyaoc.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script><meta property="og:title" content="ICPC 桃園站心得" />
+<meta property="og:description" content="其實桃園站已經過了好一陣子了，不過桃園站完那陣子實在是有點忙，於是就拖到現在了 我的隊友是 joylintp 和 Ji_Kuai，隊名是超級油的 \(&lsquo;U`*)9 (這隊名甚至沒辦" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yungyaoc.github.io/posts/taoyuan_regional/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-13T16:31:18&#43;08:00" />
+<meta property="article:modified_time" content="2022-12-13T16:31:18&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ICPC 桃園站心得"/>
+<meta name="twitter:description" content="其實桃園站已經過了好一陣子了，不過桃園站完那陣子實在是有點忙，於是就拖到現在了 我的隊友是 joylintp 和 Ji_Kuai，隊名是超級油的 \(&lsquo;U`*)9 (這隊名甚至沒辦"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://yungyaoc.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "ICPC 桃園站心得",
+      "item": "https://yungyaoc.github.io/posts/taoyuan_regional/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ICPC 桃園站心得",
+  "name": "ICPC 桃園站心得",
+  "description": "其實桃園站已經過了好一陣子了，不過桃園站完那陣子實在是有點忙，於是就拖到現在了 我的隊友是 joylintp 和 Ji_Kuai，隊名是超級油的 \\(\u0026lsquo;U`*)9 (這隊名甚至沒辦",
+  "keywords": [
+    
+  ],
+  "articleBody": "其實桃園站已經過了好一陣子了，不過桃園站完那陣子實在是有點忙，於是就拖到現在了\n我的隊友是 joylintp 和 Ji_Kuai，隊名是超級油的 \\(‘U`*)9 (這隊名甚至沒辦法用code的格式顯示)\n畢竟過很久了，而且我賽中好像沒什麼做事，所以這篇文就真的是一篇札記\n還有就是這場 Regional 場外比場內有趣多了(X\nDay 1 比賽地點在桃園市武漢國中，剛好我們家在附近，所以我爸就載我過去了\n我還一直把集合時間當成2點，但其實是1:30，於是就小遲到了，但似乎報到本來就還沒報到完，所以不影響\n然後就領到狗牌了，還有不油的人問我隊名怎麼那麼可愛，超好笑\n接著就測機，印象中judge速度滿快的\n測完機就搭主辦單位的車去中壢然後住飯店了\n晚餐是跑去離飯店大概10分鐘路程的拉麵店吃\n點ㄌ一碗煮干，滿好吃的\n晚上 晚上發生ㄌ有趣的事情\n不過應該不能在這裡講，我只是打出來吊胃口ㄉ哈哈\nDay 2 Day 2就是正式賽了\n前一晚出了點意外所以比較晚睡，起床的時候基本上是沒睡飽的\n買了全家的咖啡想說跟高中比賽一樣可以食物飲料放外面中間出去吃\n結果竟然不行，整杯咖啡幾乎沒喝就倒掉了\n賽中發生什麼事沒啥印象了\n總之有搶到一題水題首殺但沒有全場首殺，Joy 為此要再打一年了(X\n最後剩半個小時不知道要幹嘛就開始瘋狂吃 Buffet\n看了一下記分板，只要有一隊多過一題我們就是銀獎\n所以就放推ㄌ\n賽後 賽後我跟 Ji_Kuai 先回台北了\n結果在客運上發現自己拿了金獎，於是就出現了這張完全沒有問題的頒獎照片\n好耶\n結論 莫名其妙拿了金獎，競程生涯可以退休ㄌ88(X\n這篇文打得好廢，但我要回去當可撥大學生趕作業了，88\n",
+  "wordCount" : "630",
+  "inLanguage": "en",
+  "datePublished": "2022-12-13T16:31:18+08:00",
+  "dateModified": "2022-12-13T16:31:18+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yungyaoc.github.io/posts/taoyuan_regional/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yungyao's Page",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yungyaoc.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://yungyaoc.github.io/" accesskey="h" title="Yungyao&#39;s Page (Alt + H)">Yungyao&#39;s Page</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://yungyaoc.github.io/archives" title="Archives/All posts">
+                    <span>Archives/All posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yungyaoc.github.io/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yungyaoc.github.io/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://yungyaoc.github.io/contenttypes/home" title="Topics">
+                    <span>Topics</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      ICPC 桃園站心得
+    </h1>
+    <div class="post-meta"><span title='2022-12-13 16:31:18 +0800 CST'>December 13, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>其實桃園站已經過了好一陣子了，不過桃園站完那陣子實在是有點忙，於是就拖到現在了</p>
+<p>我的隊友是 <code>joylintp</code> 和 <code>Ji_Kuai</code>，隊名是超級油的 	\(&lsquo;U`*)9 (這隊名甚至沒辦法用code的格式顯示)</p>
+<p>畢竟過很久了，而且我賽中好像沒什麼做事，所以這篇文就真的是一篇札記</p>
+<p>還有就是這場 Regional 場外比場內有趣多了(X</p>
+<h1 id="day-1">Day 1<a hidden class="anchor" aria-hidden="true" href="#day-1">#</a></h1>
+<p>比賽地點在桃園市武漢國中，剛好我們家在附近，所以我爸就載我過去了</p>
+<p>我還一直把集合時間當成2點，但其實是1:30，於是就小遲到了，但似乎報到本來就還沒報到完，所以不影響</p>
+<p><img loading="lazy" src="https://cdn.discordapp.com/attachments/1021436362295103559/1052142883299409940/PXL_20221120_071000900.jpg" alt=""  />
+</p>
+<p>然後就領到狗牌了，還有不油的人問我隊名怎麼那麼可愛，超好笑</p>
+<p>接著就測機，印象中judge速度滿快的</p>
+<p>測完機就搭主辦單位的車去中壢然後住飯店了</p>
+<p>晚餐是跑去離飯店大概10分鐘路程的拉麵店吃</p>
+<p>點ㄌ一碗煮干，滿好吃的</p>
+<p><img loading="lazy" src="https://cdn.discordapp.com/attachments/1021436362295103559/1052143727491170314/PXL_20221119_095248506.jpg" alt=""  />
+</p>
+<h2 id="晚上">晚上<a hidden class="anchor" aria-hidden="true" href="#晚上">#</a></h2>
+<p>晚上發生ㄌ有趣的事情</p>
+<p>不過應該不能在這裡講，我只是打出來吊胃口ㄉ哈哈</p>
+<h1 id="day-2">Day 2<a hidden class="anchor" aria-hidden="true" href="#day-2">#</a></h1>
+<p>Day 2就是正式賽了</p>
+<p>前一晚出了點意外所以比較晚睡，起床的時候基本上是沒睡飽的</p>
+<p>買了全家的咖啡想說跟高中比賽一樣可以食物飲料放外面中間出去吃</p>
+<p>結果竟然不行，整杯咖啡幾乎沒喝就倒掉了</p>
+<p>賽中發生什麼事沒啥印象了</p>
+<p>總之有搶到一題水題首殺但沒有全場首殺，<code>Joy</code> 為此要再打一年了(X</p>
+<p>最後剩半個小時不知道要幹嘛就開始瘋狂吃 Buffet</p>
+<p>看了一下記分板，只要有一隊多過一題我們就是銀獎</p>
+<p>所以就放推ㄌ</p>
+<h2 id="賽後">賽後<a hidden class="anchor" aria-hidden="true" href="#賽後">#</a></h2>
+<p>賽後我跟 <code>Ji_Kuai</code> 先回台北了</p>
+<p>結果在客運上發現自己拿了金獎，於是就出現了這張完全沒有問題的頒獎照片</p>
+<p><img loading="lazy" src="https://imgur.com/I4guz7H.jpg" alt=""  />
+</p>
+<p>好耶</p>
+<h1 id="結論">結論<a hidden class="anchor" aria-hidden="true" href="#結論">#</a></h1>
+<p>莫名其妙拿了金獎，競程生涯可以退休ㄌ88(X</p>
+<p>這篇文打得好廢，但我要回去當可撥大學生趕作業了，88</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+
+  </footer>
+<div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://yungyaos-blog.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>Copyright &copy; 2022 <a href="https://yungyaoc.github.io/">Yungyao&#39;s Page</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    <span>
+        Hosted on
+        <a href="https://www.github.com/yungyaoc/yungyaoc.github.io/" target="_blank">Github</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
